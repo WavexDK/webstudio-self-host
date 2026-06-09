@@ -141,7 +141,7 @@ services:
       # SERVICE_URL_APP is injected by Coolify and includes the https:// prefix.
       # Do not use SERVICE_FQDN_APP here — it is the bare hostname without protocol
       # and will fail the URL validation check on startup.
-      - DEPLOYMENT_URL=https://webstudio.wavedk.xyz
+      - DEPLOYMENT_URL=http://webstudio.wavedk.xyz
       # Required in production — used as OAuth server credentials for the webstudio CLI
       # (webstudio sync / webstudio build). Any non-empty, non-default values work.
       - AUTH_WS_CLIENT_ID=${AUTH_WS_CLIENT_ID:-self-hosted}
